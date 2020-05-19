@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+
+fig = plt.figure()
+ax = fig.gca( projection = '3d' )
+
+t = np.linspace( 0 , 2 * np.pi, 100 )
+z = t
+x = np.sin(z)
+y = np.cos(z)*2
+ax.plot(x, y, z, label = 'zadanie 1' )
+ax.legend()
+plt.show()
